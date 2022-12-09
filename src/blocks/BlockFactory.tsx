@@ -1,3 +1,4 @@
+import marqueeBlock from './marqueeBlock'
 import Block from './Block'
 import { BlockModel, BlockTypes } from './types'
 import IFrameBlock from './IFrameBlock'
@@ -25,6 +26,7 @@ export default class BlockFactory {
       case "video": return new IFramelyBlock(model)
       case "profile": return new ProfileBlock(model)
       case "giphy": return new GiphyBlock(model)
+      case "marquee": return new marqueeBlock(model)
       // new blocks go here
       default: return new IFrameBlock(model)
     }

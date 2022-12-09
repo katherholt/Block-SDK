@@ -155,4 +155,13 @@ export const BlockTypes: { [key: string]: BlockType } = {
         icon: giphyIcon,
         deprecated: true
     },
+  "marquee": { 
+        type: "marquee",
+        displayName: "Marquee",
+        displayDescription: "Display a scrolling banner of text",
+        emptyTitle: "Empty Marquee Block",
+        emptySubtitle: "Tap here to setup your Marquee block!",
+        icon: "marqueeIcon", // TODO: insert your block icon here
+        deprecated: false
+    },
 };
